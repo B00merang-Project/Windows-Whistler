@@ -124,7 +124,7 @@ style "murrine-default" {
 
 	engine "murrine" {
 		animation = FALSE
-		arrowstyle = 0 # 0 = normal arrows, 1 = filled arrows
+		arrowstyle = 1 # 0 = normal arrows, 1 = filled arrows
 		border_shades = { 1.0, 1.0 } # gradient to draw on border
 		colorize_scrollbar = FALSE
 		comboboxstyle = 0 # 0 = normal combobox, 1 = colorized combobox below arrow

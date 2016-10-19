@@ -123,87 +123,6 @@
     background-image: url("assets/menuitem-radio-checked-insensitive.png");
 }
 
-/******************
- * window actions *
- ******************/
-
-.titlebar .titlebutton.minimize {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("buttons/minimize-focused-normal.png"));
-}
-
-.titlebar .titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("buttons/minimize-unfocused-normal.png"));
-    color: transparent;
-}
-
-.titlebar .titlebutton.minimize:hover,
-.titlebar .titlebutton.minimize:active/*,
-.titlebar .titlebutton.minimize:checked*/ {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("buttons/minimize-focused-active.png"));
-}
-
-.titlebar .titlebutton.maximize {
-   color: transparent;
-    border-image: none;
-    box-shadow: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("buttons/maximize-focused-normal.png"));
-}
-
-.titlebar .titlebutton.maximize:backdrop {
-    background-image: -gtk-scaled(url("buttons/maximize-unfocused-normal.png"));
-    color: transparent;
-}
-
-
-.titlebar .titlebutton.maximize:hover, 
-.titlebar .titlebutton.maximize:active/*,
-.titlebar .titlebutton.maximize:checked*/  {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("buttons/maximize-focused-active.png"));
-}
-
-.titlebar .titlebutton.close {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("buttons/close-focused-normal.png"));
-}
-
-.titlebar .titlebutton.close:backdrop {
-    background-image: -gtk-scaled(url("buttons/close-unfocused-normal.png"));
-    color: transparent;
-}
-
-
-.titlebar .titlebutton.close:hover,
-.titlebar .titlebutton.close:active/*,
-.titlebar .titlebutton.close:checked*/  {
-    color: transparent;
-    border-image: none;
-    box-shadow: none;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: -gtk-scaled(url("buttons/close-focused-active.png"));
-}
-
 /*********************************
  * check and radio (gnome 3.18+) *
  *********************************/
@@ -327,36 +246,35 @@
 
 .scrollbar.button.vertical.top,
 .scrollbar.button.vertical.top:insensitive {
-	background-image: url("scrollbars/up.png");
-        border-image: url("scrollbars/up.png");
+    background-image: url("scrollbars/up.png");
+    border-image: url("scrollbars/up.png");
     background-size: cover;
-	border-width: 0px;
-	border-style: none;
-        color: transparent;
+    border-width: 0px;
+    border-style: none;
+    color: transparent;
 }
 
 .scrollbar.button.vertical.bottom,
 .scrollbar.button.vertical.bottom:insensitive {
-	background-image: url("scrollbars/down.png");
-        border-image: url("scrollbars/down.png");
+    background-image: url("scrollbars/down.png");
+    border-image: url("scrollbars/down.png");
     background-size: cover;
-	border-width: 0px;
-	border-style: none;
+    border-width: 0px;
+    border-style: none;
 }
 
 .scrollbar.button.horizontal.left,
 .scrollbar.button.horizontal.left:insensitive {
-	background-image: url("scrollbars/left.png");
-        border-image: url("scrollbars/left.png");
-	border-width: 0px;
-	border-style: none;
+    background-image: url("scrollbars/left.png");
+    border-image: url("scrollbars/left.png");
+    border-width: 0px;
+    border-style: none;
 }
 
 .scrollbar.button.horizontal.right,
 .scrollbar.button.horizontal.right:insensitive {
-	background-image: url("scrollbars/right.png");
-        border-image: url("scrollbars/right.png");
-	border-width: 0px;
-	border-style: none;
+    background-image: url("scrollbars/right.png");
+    border-image: url("scrollbars/right.png");
+    border-width: 0px;
+    border-style: none;
 }
-
