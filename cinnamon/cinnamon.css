@@ -104,7 +104,7 @@ StScrollBar StButton#vhandle:hover {
  * ===================================================================*/
 
 .popup-menu-boxpointer {
-    -arrow-background-color: #f4f5f0;
+    -arrow-background-color: transparent;
     -arrow-border-color: transparent;
     -boxpointer-gap: 0px;
     -arrow-border-radius: 16px;
@@ -1524,13 +1524,11 @@ border-radius: 1px;
  * Menu (menu.js)
  * ===================================================================*/
 
-/.menu-background {
+.menu-background {
     border: inset 1px solid rgba(20,20,20,0.5);
     background-color: #f4f5f0;
+    border-radius: 0;
     border-image: url("border-menu.png") 10 12 10 12;
-    background-gradient-direction: vertical;
-    background-gradient-start: #f4f5f0;
-    background-gradient-end: #f4f5f0;
 }
 
 .menu-favorites-box {
@@ -1538,9 +1536,6 @@ border-radius: 1px;
     margin: auto;
     padding: 0px;
     padding-left: 5px;
-    background-gradient-direction: vertical;
-    background-gradient-start: #f4f5f0;
-    background-gradient-end: #f4f5f0;
 }
 .menu-favorites-button {
     padding: 10px;
@@ -2182,4 +2177,48 @@ The colour parameters are red, green, blue, and transparency or a name */
     border-bottom-width: 0px;
     border-right-width: 0px;
     border-radius: 8px 0px 0px 0px;
+}
+
+/* ===================================================================
+ * CinnXPStarkMenu 
+ * (if CinnXPStarkMenu is used, change some stuff, else use default)
+ * ===================================================================*/
+.right-buttons-box {
+    background-color: #2f6fd0;
+    padding: 8px;
+}
+.starkmenu-background {
+    background-color: #2f6fd0;
+    background-gradient-direction: none;
+    border-radius: 0;
+    border-image: none;
+    padding: 10px;
+    background-image: none;
+    box-shadow: inset 0 0 2px 1px white;
+}
+.starkmenu-selected-app-box {
+    color: black; /* Information, which is shown, if you select apps*/
+}
+.starkmenu-favorites-box {  
+    background-color: #fff;
+    border: 0px solid #fff;
+    border-radius: 6px;
+    box-shadow: inset 0 0 4px 3px rgba(0,0,0,0.3);
+}
+.starkmenu-applications-box {
+    padding: 0px 0px 0px 0px;
+}
+.starkmenu-applications-inner-box {
+    background-color: #fff;
+    color: black;
+}
+.starkmenu-applications-box StScrollView {
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    background-color: #f1f1f1;
+    color: black;
+}
+.starkmenu-search-box {
+    padding-bottom: 5px;
+    padding-right: 5px;
 }

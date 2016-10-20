@@ -8,7 +8,7 @@
 @define-color fg_color #000;
 @define-color base_color #fff;
 @define-color text_color #000;
-@define-color selected_bg_color #5296f7;
+@define-color selected_bg_color #3367bc;
 @define-color selected_fg_color #fff;
 @define-color tooltip_bg_color #ebebe4;
 @define-color tooltip_fg_color #000;
@@ -57,7 +57,7 @@
 @define-color menubar_fg_color @dark_fg_color;
 @define-color toolbar_bg_color @dark_bg_color; /*@theme_bg_color;*/
 @define-color toolbar_fg_color @dark_fg_color; /*@theme_fg_color;*/
-@define-color menu_bg_color @bg_color;
+@define-color menu_bg_color @base_color;
 @define-color menu_fg_color @fg_color;
 @define-color panel_bg_color #1a1a1a;
 @define-color panel_fg_color @dark_fg_color;

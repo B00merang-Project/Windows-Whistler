@@ -86,14 +86,14 @@
 
 /********************************
  * Touch text selection handles *
- ********************************
+ ********************************/
 .cursor-handle.bottom {
 	background-image: url("assets/slider-horiz.png");
 }
 
 .cursor-handle.top {
 	background-image: url("assets/slider-horiz.png");
-}*/
+}
 
 /* menuitem */
 

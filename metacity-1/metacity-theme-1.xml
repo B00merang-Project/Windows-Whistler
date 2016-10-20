@@ -11,16 +11,16 @@
 <constant name="IconTitleSpacing" value="0"/>
 
 <frame_geometry name="normal"  rounded_top_left="false"  rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false" title_scale="medium">
-  <distance name="left_width" value="1"/>
-  <distance name="right_width" value="1"/>
-  <distance name="bottom_height" value="1"/>
-  <distance name="left_titlebar_edge" value="1"/>
-  <distance name="right_titlebar_edge" value="1"/>
-  <distance name="button_width" value="44"/>
-  <distance name="button_height" value="30"/>
+  <distance name="left_width" value="4"/>
+  <distance name="right_width" value="4"/>
+  <distance name="bottom_height" value="4"/>
+  <distance name="left_titlebar_edge" value="4"/>
+  <distance name="right_titlebar_edge" value="4"/>
+  <distance name="button_width" value="18"/>
+  <distance name="button_height" value="17"/>
   <distance name="title_vertical_pad" value="0"/>
-  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  <border name="button_border" left="3" right="0" top="1" bottom="0"/>
+  <border name="title_border" left="0" right="0" top="4" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="3" bottom="2"/>
 </frame_geometry>
 
 <frame_geometry name="maximized" rounded_top_left="false" rounded_top_right="false" rounded_bottom_left="false" rounded_bottom_right="false" title_scale="medium">
@@ -29,11 +29,11 @@
   <distance name="bottom_height" value="0"/>
   <distance name="left_titlebar_edge" value="3"/>
   <distance name="right_titlebar_edge" value="3"/>
-  <distance name="button_width" value="44"/>
-  <distance name="button_height" value="30"/>
+  <distance name="button_width" value="18"/>
+  <distance name="button_height" value="17"/>
   <distance name="title_vertical_pad" value="0"/>
-  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
-  <border name="button_border" left="3" right="1" top="1" bottom="0"/>
+  <border name="title_border" left="0" right="0" top="4" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="3" bottom="2"/>
 </frame_geometry>
 
 <frame_geometry name="border" parent="normal" has_title="false">
@@ -44,13 +44,13 @@
 </frame_geometry>
 
 <draw_ops name="title-text-focused">
-<title color="#ffffff" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/> 
-<title color="#000000" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>
+ <title color="#000000" x="11" y="(height - title_height) / 2"/>  
+ <title color="#ffffff" x="10" y="(height - title_height) / 2 - 1"/>
 </draw_ops>
 
 <draw_ops name="title-text-unfocused">
- <title color="#ffffff" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>  
-<title color="#cfcfcf" x="(0 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2 + mini_icon_width + IconTitleSpacing" y="(height - title_height) / 2"/>
+ <title color="#4c4c4c" x="11" y="(height - title_height) / 2"/>  
+ <title color="#f8f8f8" x="10" y="(height - title_height) / 2 - 1"/>
 </draw_ops>
 
 <draw_ops name="blank">
@@ -58,7 +58,7 @@
 
 <draw_ops name="title">
   <image filename="titlebar-focused-left.png" x="0" y="0" width="object_width" height="height"/>
-  <image filename="titlebar-focused-middle.png" x="9" y="0" width="width - 9" height="height"/>
+  <image filename="titlebar-focused-middle.png" x="5" y="0" width="width - 9" height="height"/>
   <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
 </draw_ops>
 
@@ -69,13 +69,14 @@
 </draw_ops>
 
 <draw_ops name="title-unfocused">
-  <image filename="titlebar-unfocused-left.png" x="0" y="0" width="object_width" height="height"/>
-  <image filename="titlebar-unfocused-middle.png" x="9" y="0" width="width - 9" height="height"/>
-  <image filename="titlebar-unfocused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
+  <image filename="titlebar-unfocused-left.png" x="0" y="0" width="object_width" height="height + 2"/>
+  <image filename="titlebar-unfocused-middle.png" x="5" y="0" width="width - 9" height="height"/>
+  <image filename="titlebar-unfocused-right.png" x="width - object_width" y="0" width="object_width" height="height + 2"/>
 </draw_ops>
 
 <draw_ops name="title-max">
   <image filename="titlebar-focused-middle.png" x="0" y="0" width="width" height="height"/>
+  <image filename="titlebar-focused-right.png" x="width - object_width" y="0" width="object_width" height="height"/>
 </draw_ops>
 
 <draw_ops name="title-max-unfocused">
@@ -174,45 +175,35 @@
   <image filename="minimize-focused-pressed.png" x="0" y="0" width="width" height="height"/>
 </draw_ops>
 
-
-<!-- Menu drawing operations -->
 <draw_ops name="menu_button_icon"> 
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
-         y="(height-mini_icon_height) / 2"
+  <clip x="2" y="0" width="width" height="height"/>
+<icon  x="2" y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
-
 <draw_ops name="menu_button_icon_unfocused"> 
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
-         y="(height-mini_icon_height) / 2"
+  <clip x="2" y="0" width="width" height="height"/>
+<icon  x="2" y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_normal">
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
-         y="(height-mini_icon_height) / 2"
+  <clip x="2" y="0" width="width" height="height"/>
+<icon  x="2" y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_pressed">
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
-         y="(height-mini_icon_height) / 2"
+  <clip x="2" y="0" width="width" height="height"/>
+<icon  x="2" y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
 
 <draw_ops name="menu_button_unfocused">
-  <clip x="5" y="0" width="width" height="height"/>
-<icon  x="(10 `max` (width-title_width-mini_icon_width-IconTitleSpacing)) / 2"
-         y="(height-mini_icon_height) / 2"
+  <clip x="2" y="0" width="width" height="height"/>
+<icon  x="2" y="(height-mini_icon_height) / 2"
          width="mini_icon_width-1" height="mini_icon_height-1"/>
 </draw_ops>
-
-
 
 <frame_style name="normal-focused" geometry="normal">
   <piece position="titlebar" draw_ops="title"/>
