@@ -192,7 +192,7 @@ StScrollBar StButton#vhandle:hover {
     -slider-height: 0.3em;
     -slider-background-color: transparent;
     -slider-border-color: #555555;
-    -slider-active-background-color: #abcfff;
+    -slider-active-background-color: #3367bcth;
     -slider-active-border-color: black;
     -slider-border-width: 1px;
     -slider-handle-radius: 6px;
@@ -1160,8 +1160,9 @@ border-radius: 0px;
     selected-color: black;
     caret-color: black;
     caret-size: 2px;
-    padding-top: 3px;
-    padding-left: 10px;
+    padding: 3px;
+    padding-top: 5px;
+    padding-left: 7px;
     width: 18em;
 }
 
@@ -1626,7 +1627,6 @@ border-radius: 1px;
 #menu-search-entry {
     font-size: 9pt;
     font-weight: normal;
-    width: 23em;
     background-gradient-start: white;
     background-gradient-end: white;
     background-gradient-direction: vertical;
@@ -1636,12 +1636,11 @@ border-radius: 1px;
     padding: 4px;
     color: black;
     caret-size: 1px;
-    border-image: url('scrollthrough.png') 10 12 10 12;
 }
 
 .menu-search-entry-icon {
     icon-size: 1em;
-    color: #2234ff;
+    color: #000;
 }
 
 /* ===================================================================
@@ -2184,15 +2183,17 @@ The colour parameters are red, green, blue, and transparency or a name */
  * (if CinnXPStarkMenu is used, change some stuff, else use default)
  * ===================================================================*/
 .right-buttons-box {
-    background-color: #2f6fd0;
+    background-color: transparent;
     padding: 8px;
+    padding-bottom: 4px;
 }
 .starkmenu-background {
-    background-color: #2f6fd0;
+/*    background-color: #2f6fd0;*/
     background-gradient-direction: none;
     border-radius: 0;
-    border-image: none;
+    border-image: url('menu-bg.png') 10 10 10 10;
     padding: 10px;
+    padding-left: 50px;
     background-image: none;
     box-shadow: inset 0 0 2px 1px white;
 }
