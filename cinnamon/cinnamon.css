@@ -2190,6 +2190,7 @@ The colour parameters are red, green, blue, and transparency or a name */
     background-color: transparent;
     padding: 8px;
     padding-bottom: 4px;
+    color: #fff;
 }
 .starkmenu-background {
 /*    background-color: #2f6fd0;*/
