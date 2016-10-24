@@ -522,7 +522,7 @@ transition-duration: 150;
 }
 
 .expo-background {
-    background-color: rgba(0,128,128,1);
+    background-color: #3b6ea5;
 }
 
 .workspace-overview-background-shade {
@@ -1662,7 +1662,11 @@ border-radius: 1px;
     border: 1px solid transparent;
 }
 
-.window-list-item-box:hover,
+.window-list-item-box:hover {
+    box-shadow: inset 0 0 0 1px #94afcc;
+    background-color: rgba(171,207,255,0.8);
+}
+
 .window-list-item-box:active,
 .window-list-item-box:checked,
 .window-list-item-box:focus    {
@@ -2222,4 +2226,8 @@ The colour parameters are red, green, blue, and transparency or a name */
 .starkmenu-search-box {
     padding-bottom: 5px;
     padding-right: 5px;
+}
+
+.hover-user-icon {
+  border-width: 0;
 }
