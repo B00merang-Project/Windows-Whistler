@@ -1503,7 +1503,7 @@ scale.mark {
 }
 
 scale trough {
-    margin: 9px 0;
+    margin: 9px 6px;
     border-color: shade(@theme_bg_color, 0.8);
     border-radius: 0px;
     background-color: shade(@theme_bg_color, 1.08);
@@ -1512,7 +1512,7 @@ scale trough {
 }
 
 scale trough.vertical {
-    margin: 0 9px;
+    margin: 6px 9px;
 }
 
 menuitem .scale highlight.left,

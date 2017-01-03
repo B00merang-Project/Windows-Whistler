@@ -113,7 +113,9 @@ StScrollBar StButton#vhandle:hover {
     -arrow-border-width: 0px;
 }
 
-.popup-menu {
+/* Cinnamon 3.2 fix */
+.popup-menu,
+.menu {
     border: inset 2px solid rgba(20,20,20,0.5);
     background-color: #f4f5f0;
     border-image: url("border-menu.png") 10 12 10 12;
@@ -131,6 +133,7 @@ StScrollBar StButton#vhandle:hover {
     background-gradient-end: #8c8c8c;
 }
 .popup-sub-menu {
+    background-color: transparent;
 }
 .popup-sub-menu .popup-menu-item:ltr {
     padding-right: 0em;
