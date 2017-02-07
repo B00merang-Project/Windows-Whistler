@@ -6,7 +6,7 @@ Windows Whistler Watercolor's theme for Cinnamon and MATE. Or DEs compatible wit
 
 **Maintainer :** [Elbullazul](https://github.com/Elbullazul) and [Feren](https://github.com/feren)
 
-**Distributor :** [B00merang Theming[(https://github.com/B00merang-Project)
+**Distributor :** [B00merang Theming](https://github.com/B00merang-Project)
 
 **License :** GPL v3
 
