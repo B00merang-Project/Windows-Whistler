@@ -12,6 +12,8 @@
 @define-color selected_fg_color #fff;
 @define-color tooltip_bg_color #ebebe4;
 @define-color tooltip_fg_color #000;
+@define-color sidebar_fg_color @fg_color;
+@define-color sidebar_bg_color @bg_color;
 
 /* dark color scheme */
 @define-color dark_bg_color #ebebe4;
