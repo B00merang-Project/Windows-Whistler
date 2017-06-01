@@ -1,6 +1,6 @@
-/*********************************
- * check and radio (gnome 3.18+) *
- *********************************/
+/*******************
+ * check and radio *
+ *******************/
 check,
 check row:selected,
 check row:selected:focus {
@@ -115,43 +115,4 @@ menuitem radio:hover {
 }
 menuitem radio:disabled {
 	color: @insensitive_fg_color; 
-}
-
-/**********************
- * Scrollbar steppers *
- **********************/
-
-scrollbar.vertical button.up,
-scrollbar.vertical button.up:disabled {
-    background-image: url("scrollbars/up.png");
-    border-image: url("scrollbars/up.png");
-    background-size: cover;
-    border-width: 0px;
-    border-style: none;
-    color: transparent;
-}
-
-scrollbar.vertical button.down,
-scrollbar.vertical button.down:disabled {
-    background-image: url("scrollbars/down.png");
-    border-image: url("scrollbars/down.png");
-    background-size: cover;
-    border-width: 0px;
-    border-style: none;
-}
-
-scrollbar.horizontal button.up,
-scrollbar.horizontal button.up:disabled {
-    background-image: url("scrollbars/left.png");
-    border-image: url("scrollbars/left.png");
-    border-width: 0px;
-    border-style: none;
-}
-
-scrollbar.horizontal button.down,
-scrollbar.horizontal button.down:disabled {
-    background-image: url("scrollbars/right.png");
-    border-image: url("scrollbars/right.png");
-    border-width: 0px;
-    border-style: none;
 }
