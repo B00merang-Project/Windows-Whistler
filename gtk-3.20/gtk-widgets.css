@@ -1767,6 +1767,7 @@ scrollbar button:disabled {
     border: none;
     box-shadow: none;
     background-color: transparent;
+    background-image: none;
     color: shade(@theme_bg_color, 0.6);
 }
 
@@ -1788,6 +1789,7 @@ scrollbar.horizontal slider {
     min-height: 12px;
     min-width: 45px;
     background: url("scrollbars/handle.png") no-repeat center center;
+    background-color: @theme_base_color;
 }
 
 scrollbar slider:hover,
@@ -1814,19 +1816,19 @@ scrollbar.vertical button.up {
 }
 
 scrollbar.horizontal button.down {
-    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic");
+/*    -gtk-icon-source: -gtk-icontheme("pan-right-symbolic");*/
+    -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
 }
 
 scrollbar.horizontal button.up {
-    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic");
+/*    -gtk-icon-source: -gtk-icontheme("pan-left-symbolic");*/
+    -gtk-icon-source: -gtk-icontheme("pan-start-symbolic");
 }
-
 
 treeview ~ scrollbar.vertical {
   border-top: 1px solid @borders;
   margin-top: -1px;
 }
-
 
 /*************
  * separator *
