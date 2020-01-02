@@ -33,24 +33,20 @@ StScrollView StScrollBar {
 }
 
 StScrollBar StBin#trough {
-  background-color: rgba(0,0,0,0);
-  border-image: url('scrollthrough.png') 10 12 10 12;
-  border-radius: 0px;
+  background-color: #e1e1d7;
 }
 
 StScrollBar StButton#vhandle {
-  background-color: rgba(204,204,204,0.7);
-  border-image: url('border-menu.png') 10 12 10 12;
-  border-radius: 1px;
+  background-color: #ffffff;
+  border: 1px solid #c2c2b1;
 }
 StScrollBar StButton#hhandle {
-  background-color: rgba(204,204,204,0.);
-  border: 1px solid #555555;
-  border-radius: 1px;
+  background-color: #ffffff;
+  border: 1px solid #c2c2b1;
 }
 StScrollBar StButton#hhandle:hover,
 StScrollBar StButton#vhandle:hover {
-  background-color: rgba(204,204,204,0.5);
+  background-color: #ffffff;
 }
 
 #Tooltip {
@@ -2025,7 +2021,7 @@ height of the table to be ICON_SIZE + IMAGE_SIZE + spacing-rows = 24 + 125 + 10 
 .expo-workspaces-name-entry {
   padding: 5px;
   padding-bottom: 10px;
-  color: gray;
+  color: black;
   border-image: url('border-menu.png') 10 12 10 12;
   background-color: white;
   background-gradient-direction: vertical;
