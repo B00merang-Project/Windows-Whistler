@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
 Name=Windows Whistler
-Comment=Windows Whistler theme for Linux OSes; based on the MTAC architecture
-Comment=Author : Christian Medel (Elbullazul)
-Version=rolling
+Comment=Windows Whistler UI for Linux OSes
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
 GtkTheme=Windows Whistler
 MetacityTheme=Windows Whistler
-ButtonLayout=:minimize,maximize,close
+IconTheme=Windows Chicago95
+CursorTheme=DMZ-White
+ButtonLayout=menu:minimize,maximize,close
