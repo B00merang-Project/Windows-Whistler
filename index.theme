@@ -7,6 +7,6 @@ Encoding=UTF-8
 [X-GNOME-Metatheme]
 GtkTheme=Windows Whistler
 MetacityTheme=Windows Whistler
-IconTheme=Windows Chicago95
+IconTheme=Chicago95
 CursorTheme=DMZ-White
 ButtonLayout=menu:minimize,maximize,close
