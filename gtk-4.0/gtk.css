@@ -17,7 +17,7 @@ dnd {
 image:disabled {
   -gtk-icon-filter: opacity(0.5); }
 
-image, image:disabled, label, label:disabled, box, box:disabled {
+image, label, box {
   background-color: transparent; }
 
 .view {
@@ -737,40 +737,38 @@ headerbar {
     headerbar .subtitle:backdrop {
       color: rgba(255, 255, 255, 0.25); }
   headerbar button {
-    padding: 4px 8px;
-    border-style: solid;
-    border-width: 1px;
+    border-color: transparent;
     border-radius: 0px;
     color: #000000;
-    border-color: black;
-    background-color: #EBEBE4;
-    background-image: linear-gradient(to bottom, #f5f5f1 5%, #EBEBE4 20%, #EBEBE4 70%, #e1e1d7 90%);
-    box-shadow: inset -1px 0 #a1a18c, inset 0 -1px #a1a18c, inset 1px 0 #f9f9f7, inset 0 1px #f9f9f7;
-    outline-color: #000000;
-    outline-offset: 0;
-    outline-style: solid; }
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent; }
     headerbar button:hover {
-      background-color: #9CBEE3;
-      box-shadow: inset -1px 0 #4f7baa, inset 0 -1px #4f7baa, inset 1px 0 #e1ecf7, inset 0 1px #e1ecf7;
-      background-image: linear-gradient(to bottom, #a9c8e9 5%, #9CBEE3 20%, #9CBEE3 70%, #8fb4dd 90%); }
+      color: #000000;
+      border-color: #000000;
+      background-color: #EBEBE4;
+      background-image: linear-gradient(to bottom, #f5f5f1 5%, #EBEBE4 20%, #EBEBE4 70%, #e1e1d7 90%);
+      box-shadow: inset -1px 0 #a1a18c, inset 0 -1px #a1a18c, inset 1px 0 #f9f9f7, inset 0 1px #f9f9f7; }
     headerbar button:active, headerbar button:checked {
       color: #000000;
-      border-color: black;
+      border-color: #000000;
       background-color: #9CBEE3;
       box-shadow: none;
       background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%); }
-      headerbar button:active:disabled, headerbar button:checked:disabled {
-        color: #0c0c0b;
-        border-color: #bebeb8;
-        background-color: #cbcbc1;
-        background-image: linear-gradient(to top, #c0c0b5 5%, #b6b6aa 20%, #b6b6aa 70%, #abab9f 90%); }
     headerbar button:disabled {
-      color: #3b3b39; }
-  headerbar entry {
-    padding: 4px 8px; }
+      border-color: transparent;
+      color: rgba(0, 0, 0, 0.8);
+      background-color: transparent; }
   headerbar.titlebar, .titlebar headerbar {
     border-radius: 0px 0px 0px 0px; }
-  headerbar .titlebutton.close, headerbar .titlebutton.maximize, headerbar .titlebutton.minimize, headerbar .titlebutton:not(separator) {
+
+windowcontrols {
+  border-spacing: 6px; }
+  windowcontrols.start:not(.empty):dir(ltr), windowcontrols.end:not(.empty):dir(rtl) {
+    margin-right: 7px; }
+  windowcontrols.start:not(.empty):dir(rtl), windowcontrols.end:not(.empty):dir(ltr) {
+    margin-left: 7px; }
+  windowcontrols button.close, windowcontrols button.maximize, windowcontrols button.minimize {
     padding: 0;
     border-radius: 0;
     -gtk-icon-shadow: none;
@@ -778,10 +776,8 @@ headerbar {
     color: rgba(255, 255, 255, 0.8);
     border-color: rgba(255, 255, 255, 0.8);
     background-image: none;
-    background-color: transparent;
-    background-position: center;
-    background-repeat: no-repeat; }
-    headerbar .titlebutton.close:backdrop, headerbar .titlebutton.maximize:backdrop, headerbar .titlebutton.minimize:backdrop, headerbar .titlebutton:not(separator):backdrop {
+    background-color: transparent; }
+    windowcontrols button.close:backdrop, windowcontrols button.maximize:backdrop, windowcontrols button.minimize:backdrop {
       color: rgba(255, 255, 255, 0.25);
       border-color: rgba(255, 255, 255, 0.25); }
 
@@ -1534,7 +1530,7 @@ actionbar {
     padding: 0 12px; }
 
 scrolledwindow > overshoot.top {
-  background-image: radial-gradient(farthest-side at top, black, transparent);
+  background-image: radial-gradient(farthest-side at top, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: top;
@@ -1543,7 +1539,7 @@ scrolledwindow > overshoot.top {
   box-shadow: none; }
 
 scrolledwindow > overshoot.bottom {
-  background-image: radial-gradient(farthest-side at bottom, black, transparent);
+  background-image: radial-gradient(farthest-side at bottom, rgba(0, 0, 0, 0.5), transparent);
   background-size: 100% 50%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1552,7 +1548,7 @@ scrolledwindow > overshoot.bottom {
   box-shadow: none; }
 
 scrolledwindow > overshoot.left {
-  background-image: radial-gradient(farthest-side at left, black, transparent);
+  background-image: radial-gradient(farthest-side at left, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: left;
@@ -1561,7 +1557,7 @@ scrolledwindow > overshoot.left {
   box-shadow: none; }
 
 scrolledwindow > overshoot.right {
-  background-image: radial-gradient(farthest-side at right, black, transparent);
+  background-image: radial-gradient(farthest-side at right, rgba(0, 0, 0, 0.5), transparent);
   background-size: 50% 100%;
   background-repeat: no-repeat;
   background-position: right;
@@ -2209,10 +2205,7 @@ popover.entry-completion > contents {
   padding: 0; }
 
 statusbar {
-  padding: 4px;
-  color: #000000; }
-  statusbar frame > border {
-    border: none; }
+  padding: 4px; }
 
 menubutton > button > box {
   border-spacing: 6px; }
