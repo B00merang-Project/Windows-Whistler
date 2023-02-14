@@ -1,4 +1,4 @@
-[![built-with-azurra-framework](https://github.com/Elbullazul/Azurra_framework/raw/assets/azurra_framework_smaller.png)](https://github.com/Elbullazul/Azurra_framework)
+[![built-with-azurra-framework](https://github.com/B00merang-Project/Azurra_framework/raw/assets/azurra_framework_smaller.png)](https://github.com/B00merang-Project/Azurra_framework)
 
 # Windows Whistler Watercolor
 Windows Whistler Watercolor's theme for Cinnamon and MATE. Or DEs compatible with GTK 3.10 to 3.18
