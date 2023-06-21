@@ -771,20 +771,20 @@ infobar > revealer > box {
   box-shadow: none; }
 
 infobar.info > revealer > box {
-  border: 1px solid #0055FF;
+  border: 1px solid #9CBEE3;
   color: #FFFFFF;
   background-image: none;
-  background-color: #0055FF; }
+  background-color: #9CBEE3; }
   infobar.info > revealer > box button:not(.close) {
     border-color: transparent;
     color: #FFFFFF;
     background-image: none;
-    background-color: #1463ff;
+    background-color: #b2ceec;
     box-shadow: none; }
     infobar.info > revealer > box button:not(.close):hover {
-      background-color: #1a66ff; }
+      background-color: #b7d1ee; }
     infobar.info > revealer > box button:not(.close):active {
-      background-color: #0653ec; }
+      background-color: #8fb4dd; }
 
 infobar.warning > revealer > box {
   border: 1px solid #FF9900;
