@@ -477,43 +477,46 @@ editablelabel > stack > text > selection {
 
 
 button {
-  padding: 4px 8px;
+  padding: 4px 6px;
+  min-width: 14px;
+  min-height: 18px;
   border-radius: 0px;
-  border: 1px solid #000000;
+  border: 1px solid #7c7c6b;
   color: #000000;
   background-color: #EBEBE4;
   background-image: linear-gradient(to bottom, #f5f5f1 5%, #EBEBE4 20%, #EBEBE4 70%, #e1e1d7 90%);
   text-shadow: none;
-  box-shadow: inset -1px -1px #a1a18c, inset 1px 1px #f9f9f7;
+  box-shadow: inset -1px -1px #c2c2b1, inset 1px 1px #f9f9f7;
   -gtk-icon-shadow: none; }
   
   button:hover {
-    border-color: #000000;
+    border-color: #455f7b;
     background-color: #9CBEE3;
     background-image: linear-gradient(to bottom, #a9c8e9 5%, #9CBEE3 20%, #9CBEE3 70%, #8fb4dd 90%);
-    box-shadow: inset -1px -1px 0 #4f7baa, inset 1px 1px #e1ecf7; }
+    box-shadow: inset -1px -1px 0 #77a1cf, inset 1px 1px #c9dbf0; }
   
   button:active {
-    border-color: #000000;
+    border-color: #7c7c6b;
     color: #000000;
     background-color: #9CBEE3;
-    background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%);
+    background-image: linear-gradient(to top, #e1e1d7 5%, #d7d7ca 20%, #d7d7ca 70%, #ccccbd 90%);
     box-shadow: none; }
   
   button:checked {
-    border-color: #000000;
+    border-color: #7c7c6b;
     color: #000000;
     background-color: #9CBEE3;
-    background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%);
+    background-image: linear-gradient(to top, #e1e1d7 5%, #d7d7ca 20%, #d7d7ca 70%, #ccccbd 90%);
     box-shadow: none; }
   
   button:checked:disabled {
-    border-color: #bcbcb6;
+    border-color: #989891;
     color: #767672;
     background-color: #cbcbc1;
     background-image: linear-gradient(to top, #c0c0b5 5%, #b6b6aa 20%, #b6b6aa 70%, #abab9f 90%); }
   
   button:disabled {
+    border-color: #bcbcb6;
     color: #767672; }
 
 headerbar button, toolbar button,
@@ -540,88 +543,84 @@ button.flat {
   headerbar button:hover, toolbar button:hover,
   .toolbar button:hover,
   button.flat:hover {
-    border-color: #000000;
+    border-color: #455f7b;
     background-color: #9CBEE3;
     background-image: linear-gradient(to bottom, #a9c8e9 5%, #9CBEE3 20%, #9CBEE3 70%, #8fb4dd 90%);
-    box-shadow: inset -1px -1px 0 #4f7baa, inset 1px 1px #e1ecf7; }
+    box-shadow: inset -1px -1px 0 #77a1cf, inset 1px 1px #c9dbf0; }
   headerbar button:active, toolbar button:active,
   .toolbar button:active,
   button.flat:active {
-    border-color: #000000;
+    border-color: #7c7c6b;
     color: #000000;
     background-color: #9CBEE3;
-    background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%);
+    background-image: linear-gradient(to top, #e1e1d7 5%, #d7d7ca 20%, #d7d7ca 70%, #ccccbd 90%);
     box-shadow: none; }
   headerbar button:checked, toolbar button:checked,
   .toolbar button:checked,
   button.flat:checked {
-    border-color: #000000;
+    border-color: #7c7c6b;
     color: #000000;
     background-color: #9CBEE3;
-    background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%);
+    background-image: linear-gradient(to top, #e1e1d7 5%, #d7d7ca 20%, #d7d7ca 70%, #ccccbd 90%);
     box-shadow: none; }
   headerbar button:checked:disabled, toolbar button:checked:disabled,
   .toolbar button:checked:disabled,
   button.flat:checked:disabled {
-    border-color: #bcbcb6;
+    border-color: #989891;
     color: #767672;
     background-color: #cbcbc1;
     background-image: linear-gradient(to top, #c0c0b5 5%, #b6b6aa 20%, #b6b6aa 70%, #abab9f 90%); }
 
 button.destructive-action {
-  padding: 4px 8px;
-  border-radius: 0px;
-  border: 1px solid #000000;
+  border: 1px solid #7c7c6b;
   color: #931010;
   background-color: #EBEBE4;
   background-image: linear-gradient(to bottom, #f5f5f1 5%, #EBEBE4 20%, #EBEBE4 70%, #e1e1d7 90%);
   text-shadow: none;
-  box-shadow: inset -1px -1px #a1a18c, inset 1px 1px #f9f9f7;
+  box-shadow: inset -1px -1px #c2c2b1, inset 1px 1px #f9f9f7;
   -gtk-icon-shadow: none; }
   button.destructive-action:hover {
-    border-color: #000000;
+    border-color: #455f7b;
     background-color: #9CBEE3;
     background-image: linear-gradient(to bottom, #a9c8e9 5%, #9CBEE3 20%, #9CBEE3 70%, #8fb4dd 90%);
-    box-shadow: inset -1px -1px 0 #4f7baa, inset 1px 1px #e1ecf7; }
+    box-shadow: inset -1px -1px 0 #77a1cf, inset 1px 1px #c9dbf0; }
   button.destructive-action:active {
-    border-color: #000000;
+    border-color: #7c7c6b;
     color: #931010;
     background-color: #9CBEE3;
-    background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%);
+    background-image: linear-gradient(to top, #e1e1d7 5%, #d7d7ca 20%, #d7d7ca 70%, #ccccbd 90%);
     box-shadow: none; }
   button.destructive-action:checked {
-    border-color: #000000;
+    border-color: #7c7c6b;
     color: #931010;
     background-color: #9CBEE3;
-    background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%);
+    background-image: linear-gradient(to top, #e1e1d7 5%, #d7d7ca 20%, #d7d7ca 70%, #ccccbd 90%);
     box-shadow: none; }
 
 button.suggested-action {
-  padding: 4px 8px;
-  border-radius: 0px;
-  border: 1px solid #000000;
+  border: 1px solid #7c7c6b;
   color: #3367BC;
   background-color: #EBEBE4;
   background-image: linear-gradient(to bottom, #f5f5f1 5%, #EBEBE4 20%, #EBEBE4 70%, #e1e1d7 90%);
   text-shadow: none;
-  box-shadow: inset -1px -1px #a1a18c, inset 1px 1px #f9f9f7;
+  box-shadow: inset -1px -1px #c2c2b1, inset 1px 1px #f9f9f7;
   -gtk-icon-shadow: none; }
   button.suggested-action:hover {
-    border-color: #000000;
+    border-color: #455f7b;
     background-color: #9CBEE3;
     background-image: linear-gradient(to bottom, #a9c8e9 5%, #9CBEE3 20%, #9CBEE3 70%, #8fb4dd 90%);
-    box-shadow: inset -1px -1px 0 #4f7baa, inset 1px 1px #e1ecf7; }
+    box-shadow: inset -1px -1px 0 #77a1cf, inset 1px 1px #c9dbf0; }
   button.suggested-action:active {
-    border-color: #000000;
+    border-color: #7c7c6b;
     color: #3367BC;
     background-color: #9CBEE3;
-    background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%);
+    background-image: linear-gradient(to top, #e1e1d7 5%, #d7d7ca 20%, #d7d7ca 70%, #ccccbd 90%);
     box-shadow: none; }
   button.suggested-action:checked {
-    border-color: #000000;
+    border-color: #7c7c6b;
     color: #3367BC;
     background-color: #9CBEE3;
-    background-image: linear-gradient(to top, #8fb4dd 5%, #83abd6 20%, #83abd6 70%, #77a1cf 90%);
+    background-image: linear-gradient(to top, #e1e1d7 5%, #d7d7ca 20%, #d7d7ca 70%, #ccccbd 90%);
     box-shadow: none; }
 
 button.link,
